@@ -110,7 +110,7 @@ try:
     # close cursor
     cur.close()
 
-except (Exception, psycopg2.DatabaseError) as error:
+except (Exception, sqlite3.DatabaseError) as error:
     print(error)
 
 finally:
